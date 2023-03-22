@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html"><img src="img/Merci Logo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#Models">Models</a></li>
+                <li><a href="registration.html">Order Online</a></li>
+                <li><a href="ServicePage.html">Services</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="wrapper">
+        <div class="title">
+            <!-- <img src="img/Merci Logo.png" alt=""> -->
+            Order Online
+        </div>
+        <div class="form">
+            <div class="input_field">
+                <label>First Name</label>
+                <input type="text" class="input" placeholder="First Name">
+            </div>
+            <div class="input_field">
+                <label>Last Name</label>
+                <input type="text" class="input" placeholder="Last Name">
+            </div>
+            <div class="input_field">
+                <label>ID Number</label>
+                <input type="number" class="input" placeholder="ID Number">
+            </div>
+            <div class="input_field">
+                <label>Email Address</label>
+                <input type="email" class="input" placeholder="xyz@address.com">
+            </div>
+            <div class="input_field">
+                <label>Phone Number</label>
+                <input type="tel" class="input" placeholder="+123 4567 890">
+            </div>
+            
+            <div class="title">
+                Car Model and Color
+            </div>
+            
+            <div class="input_field">
+                <label>Model</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select</option>
+                        <option value="gcs">G-Class SUV</option>
+                        <option value="gs">GLS SUV</option>
+                        <option value="gc">GLE Coupe</option>
+                        <option value="ag">AMG GT</option>
+                        <option value="sr">SL Roadster</option>
+                        <option value="es">EQS Sedan</option>
+                        <option value="msc">Maybach S-Class</option>
+                        <option value="ss">S-Class Sedan</option>
+                        <option value="ec">E-Class Cabriolet</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Color</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select</option>
+                        <option value="ob">Obsidian Black</option>
+                        <option value="ws">White Snow</option>
+                        <option value="ms">Metallic Silver</option>
+                        <option value="gd">Grey Dove</option>
+                        <option value="gb">Gold Brown</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="title">
+                Payment
+            </div>
+            
+            <div class="input_field">
+                <label>Payment</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Select</option>
+                        <option value="cc">Credit Cards</option>
+                        <option value="dc">Debit Cards</option>
+                        <option value="dw">Digital Wallet</option>
+                        <option value="fal">Fixed annuity loan</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Card Number</label>
+                <input type="number" class="input" placeholder="0123456789">
+            </div>
+            <div class="input_field terms">
+                <label class="check">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <p>Agreed to terms and conditions</p>
+            </div>
+            <div class="input_field">
+                <input type="submit" value="Check Card" class="btn" id="continue">
+            </div>
+
+            <div class="title">
+                Address
+            </div>
+
+            <div class="input_field">
+                <label>Country</label>
+                <input type="text" class="input" placeholder="Indonesia">
+            </div>
+            <div class="input_field">
+                <label>Province</label>
+                <input type="text" class="input" placeholder="DKI Jakarta">
+            </div>
+            <div class="input_field">
+                <label>Address</label>
+                <textarea class="textarea"></textarea>
+            </div>
+            <div class="input_field">
+                <label>ZIP Code</label>
+                <input type="number" class="input" placeholder="1234">
+            </div>
+            <div class="input_field">
+                <input type="submit" value="Continue" class="btn" id="continue">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    document.getElementById("continue").onclick = function () {
+        location.href = "AfterForm.html";
+    }
+    
+</script>
+</html>
